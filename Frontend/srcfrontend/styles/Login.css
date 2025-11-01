@@ -1,0 +1,30 @@
+.main-login {
+    /* border: 1px solid red; */
+    margin: auto;
+    max-width: 1200px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    align-content: center;
+}
+
+.main-checkout {
+    /* border: 1px solid red; */
+    margin: auto;
+    max-width: 1200px;
+    display: flex;
+    flex-flow: column;
+    justify-content: center;
+    align-items: center;
+    align-content: center;
+}
+
+.main-catalogo {
+    /* border: 1px solid red; */
+    margin: auto;
+    max-width: 1200px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    align-content: center;
+}
