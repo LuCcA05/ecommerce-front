@@ -1,10 +1,13 @@
-.grid-home-prod {
+.grid-home-prod, .main-home-contenedor {
     /* border: 1px solid red; */
+    width: 100%;
+    max-width: 1270px;
     display: flex;
     gap: var(--spacing-lg);
-    margin-top: var(--spacing-lg);
+    margin: auto;
     flex-flow: row wrap;
     justify-content: center;
+    margin-top: 20px;
 }
 
 .prod-home-container {
@@ -63,7 +66,7 @@
 }
 
 .prod-home-btn-carrito {
-    background-color: var(--primary-color);
+    background-color: var(--third-color);
     color: var(--text-white);
     border: none;
     border-radius: var(--border-radius);
@@ -76,7 +79,7 @@
 }
 
 .prod-home-btn-carrito:hover {
-    background-color: var(--primary-dark);
+    background-color: var(--third-dark-color);
 }
 
 .prod-home-btn-carrito:active {

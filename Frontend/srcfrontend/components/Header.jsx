@@ -1,20 +1,17 @@
-import "../styles/Header.css";
 import { Link } from "react-router-dom";
 import Nav_Categories from "./Nav_Category";
 
+import "../styles/Header.css";
+
 import { MdOutlineAddShoppingCart } from "react-icons/md";
-import { FaBars } from "react-icons/fa6";
 import { VscAccount } from "react-icons/vsc";
 import { FaSearch } from "react-icons/fa";
 
 /**
- * Componente Header
- * 
- * Renderiza el encabezado principal de la aplicación con navegación.
- * Incluye el logo, barra de búsqueda, icono de menú hamburguesa,
- * enlace a "Mi Cuenta" y enlace al carrito de compras.
- * También incluye el componente de navegación por categorías.
- */
+* Componente Header
+* 
+* Renderiza el encabezado principal de la aplicación con navegación.
+*/
 
 function Header() {
 
@@ -23,17 +20,11 @@ function Header() {
             {/* Contenedor principal del header */}
             <div className="header-all-contenedor">
                 <header className="header">
-                    {/* Sección izquierda: Icono de menú hamburguesa */}
-                    <div className="header-left">
-                        <div className="faBar-icon">
-                            <FaBars size={25}/>
-                        </div>
-                    </div>
 
                     {/* Logo de la aplicación con enlace a la página principal */}
                     <Link to="/" className="link-logo">
                         <div className="header-logo">
-                            <h1>MITINEDA</h1>
+                            <h1>TRADIOGLOBAL</h1>
                         </div>
                     </Link>
 

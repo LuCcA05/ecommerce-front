@@ -1,15 +1,12 @@
-import "../styles/Product_Home.css";
+import "../styles/Productos.css";
 import { useEffect, useState } from "react";
 import { getProductoById } from "../services/productos";
 
 /**
- * Componente ProductoHome
- * 
- * Renderiza una tarjeta de producto para la página principal.
- * Obtiene los datos del producto desde la API usando su ID
- * y muestra la información del producto (imagen, nombre, precio, stock, descripción)
- * junto con un botón para agregarlo al carrito.
- */
+* Componente ProductoHome
+
+* Muestra productos para la pagina pricipal con su imagen, descripcion, precio, nombre por ID
+*/
 
 function ProductoHome({ id }) {
     // Estado para almacenar los datos del producto
@@ -26,6 +23,7 @@ function ProductoHome({ id }) {
     if (!producto) return <p>Cargando productos...</p>;
 
     return (
+        
         <div className="prod-home-container">
             {/* Imagen del producto */}
             <img src={producto.imagen} alt={producto.nombre} className="prod-home-image" />

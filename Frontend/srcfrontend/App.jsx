@@ -6,19 +6,20 @@ import Carrito from "./pages/Carrito";
 import Checkout from "./pages/Checkout";
 
 /**
- * Componente App
- * 
- * Componente principal de la aplicación que configura el enrutamiento.
- * Define todas las rutas disponibles en la aplicación utilizando React Router.
- * Cada ruta está asociada a un componente de página específico.
- * 
- * Rutas disponibles:
- * - "/" - Página principal (Home)
- * - "/login" - Página de inicio de sesión
- * - "/catalogo" - Catálogo de productos
- * - "/carrito" - Carrito de compras
- * - "/checkout" - Proceso de finalización de compra
- */
+* Componente App
+* 
+* Componente principal de la aplicación que configura el enrutamiento.
+* Define todas las rutas disponibles en la aplicación utilizando React Router.
+* Cada ruta está asociada a un componente de página específico.
+* 
+* Rutas disponibles:
+* - "/" - Página principal (Home)
+* - "/login" - Página de inicio de sesión
+* - "/catalogo" - Catálogo de productos
+* - "/carrito" - Carrito de compras
+* - "/checkout" - Proceso de finalización de compra
+*/
+
 function App() {
   return (
       // Router principal que habilita el enrutamiento en toda la aplicación

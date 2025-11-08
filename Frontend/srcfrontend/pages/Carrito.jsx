@@ -2,12 +2,12 @@ import Header from "../components/Header.jsx";
 import "../styles/Carrito.css";
 
 /**
- * Componente Carrito
- * 
- * Muestra la página del carrito de compras del usuario.
- * Renderiza una lista de productos agregados al carrito y un botón
- * para realizar la compra.
- */
+* Componente Carrito
+* 
+* Muestra la página del carrito de compras del usuario.
+* Renderiza una lista de productos agregados al carrito y un botón
+* para realizar la compra.
+*/
 
 function Carrito() {
     return (

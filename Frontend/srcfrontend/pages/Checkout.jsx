@@ -3,13 +3,11 @@ import Header from "../components/Header";
 import BuscarUsuario from "../components/UsuarioID";
 
 /**
- * Componente Checkout
- 
- * Renderiza la página de checkout (finalización de compra).
- 
- * Actualmente, cumple la funcion de buscar usuarios por DNI.
- * Incliye ejemplos de DNI válidos para pruebas.
- */
+* Componente Checkout
+
+* Renderiza la página de checkout (finalización de compra).
+
+*/
 
 function Checkout() {
     return (
@@ -22,14 +20,14 @@ function Checkout() {
                     <h2>CHECKOUT EN CONSTRUCCIÓN...</h2>
                 </div>
 
-                <h3>Buscar Usuarios:</h3>
+                {/* <h3>Buscar Usuarios:</h3>
                 <ul>
                     <li>Ejemplo DNI: 543623413</li>
                     <li>Ejemplo DNI: 123412234</li>
                     <li>Ejemplo DNI: 222333444</li>
-                </ul>
+                </ul> */}
                 {/* Componente para buscar usuarios por DNI */}
-                <BuscarUsuario />
+                {/* <BuscarUsuario /> */}
             </div>
         </div>
 

@@ -1,53 +1,35 @@
 import api from "./api";
 
 /**
- * Servicios para interactuar con el endpoint de pedidos de la API
- */
+* Servicios para interactuar con el endpoint de pedidos de la API
+*/
 
-/**
- * Obtiene un pedido específico por su ID
- * 
- * Realiza una petición GET al endpoint /pedidos/{id} para obtener
- * los detalles de un pedido en particular.
- */
-
-export async function getPedidoById(id) {
-    const res = await api.get(`/pedidos/${id}`);
-    return res.data;
-}
-
-/**
- * Crea un nuevo pedido
- * 
- * Realiza una petición POST al endpoint /pedidos para crear
- * un nuevo pedido con los datos proporcionados.
- */
-
+// Crear un nuevo pedido
 export async function createPedido(data) {
     const res = await api.post("/pedidos", data);
     return res.data;
 }
 
-/**
- * Actualiza un pedido existente
- * 
- * Realiza una petición PATCH al endpoint /pedidos/{id} para actualizar
- * parcialmente los datos de un pedido existente.
- */
+// Obtener un pedido por ID
+export async function getPedidoById(id) {
+    const res = await api.get(`/pedidos/${id}`);
+    return res.data;
+}
 
+// Actualizar el estado de un pedido
 export async function updatePedido(id, data) {
     const res = await api.patch(`/pedidos/${id}`, data);
     return res.data;
 }
 
-/**
- * Elimina un pedido
- * 
- * Realiza una petición DELETE al endpoint /pedidos/{id} para eliminar
- * un pedido específico.
- */
-
+// Eliminar un pedido
 export async function deletePedido(id) {
     await api.delete(`/pedidos/${id}`);
+}
+
+// Obtener todos los pedidos de un usuario por DNI
+export async function getPedidosByUsuario(dni) {
+    const res = await api.get(`/pedidos/usuario/${dni}`);
+    return res.data;
 }
 

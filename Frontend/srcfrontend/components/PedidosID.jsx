@@ -2,12 +2,12 @@ import { useEffect, useState } from "react";
 import { getPedidoById } from "../services/pedidos";
 
 /**
- * Componente PedidoDetalle
- * 
- * Muestra los detalles de un pedido específico obtenido por su ID.
- * Obtiene la información del pedido desde la API cuando el componente
- * se monta o cuando cambia el ID del pedido.
- */
+* Componente PedidoDetalle
+* 
+* Muestra los detalles de un pedido específico obtenido por su ID.
+* Obtiene la información del pedido desde la API cuando el componente
+* se monta o cuando cambia el ID del pedido.
+*/
 
 function PedidoDetalle({ id }) {
     // Estado para almacenar los datos del pedido

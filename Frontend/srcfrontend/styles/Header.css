@@ -23,7 +23,6 @@
 .header {
     /* border: 1px solid blue; */
     background-color: rgb(41, 137, 84);
-    border-radius: var(--border-radius-lg);
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -33,21 +32,25 @@
     gap: var(--spacing-sm);
 }
 
-.faBar-icon, .cart-icon {
+.cart-icon {
     /* border: 1px solid black; */
     display: flex;
     align-items: center;
     border-radius: var(--border-radius);
     padding: 0.75rem;
+    text-decoration: none;
+    border:none;
+    background-color: rgb(41, 137, 84);
+    margin: 0;
 }
 
-.faBar-icon:hover, .cuenta-box:hover, .cart-icon:hover {
+.cuenta-box:hover, .cart-icon:hover {
     cursor: pointer;
     background-color: rgb(99, 201, 123);
     transition: var(--transition-normal);
 }
 
-.header-left, .header-logo, .header-search, .header-right {
+.header-logo, .header-search, .header-right {
     /* border: 2px solid rgb(0, 0, 0);  */
     display: flex;
     gap: var(--spacing-md);
@@ -69,14 +72,14 @@
 .search-box {
     border: 2px solid rgb(25, 105, 48);
     background-color: white;
-    border-radius: var(--border-radius-xlg);
+    border-radius: var(--border-radius-lg);
     display: flex;
     align-items: center;
     justify-content: space-between;
     padding: 0px 10px;
     width: 100%;
     max-width: 400px;
-    height: 30px;
+    height: 37px;
 }
 
 .buscador {
@@ -106,23 +109,20 @@
 
 /* ==================================  Tablets pequeñas (481px - 768px)  =========================================================== *//* ========================================================================================================================== */
 
-@media screen and (max-width: 850px) {
-    /* .header-left, .header-logo, .header-right, .header-search {
-        border: 1px solid blue;
-    } */
+/* @media screen and (max-width: 850px) {
 
     .header {
         max-width: 850px;
     }
     
-    .header-logo, .header-left, .header-right {
+    .header-logo, .nav-menu, .header-right {
         display: flex;
         gap: 0;
         align-items: center;
         padding: 0;
     }
 
-    .header-left {
+    .nav-menu {
         padding-left: 10px;
     }
     .header-right {
@@ -147,20 +147,20 @@
     .header-right {
         gap: var(--spacing-md);
     }
-}
+} */
 
 
 
 
 /* ==================================  Móviles (320px - 480px)  =========================================================== */
 
-@media screen and (max-width: 500px) {
+/* @media screen and (max-width: 500px) {
     .header {
         padding: var(--spacing-xs);
         gap: var(--spacing-sm);
     }
     
-    .header-left, .header-logo, .header-search, .header-right {
+    .nav-menu, .header-logo, .header-search, .header-right {
         padding-left: var(--spacing-xs);
         padding-right: var(--spacing-xs);
         gap: var(--spacing-sm);
@@ -179,7 +179,7 @@
         min-width: 26px;
     }
     
-    .faBar-icon, .cart-icon {
+    .cart-icon {
         padding: var(--spacing-xs);
     }
     
@@ -187,16 +187,16 @@
         padding: var(--spacing-xs);
         gap: var(--spacing-xs);
     }
-}
+} */
 
 /* ==================================  Móviles muy pequeños (hasta 320px)  =========================================================== */
 
-@media screen and (max-width: 320px) {
+/* @media screen and (max-width: 320px) {
     .header {
         padding: var(--spacing-xs);
     }
     
-    .header-left, .header-logo, .header-search, .header-right {
+    .nav-menu, .header-logo, .header-search, .header-right {
         padding-left: var(--spacing-xs);
         padding-right: var(--spacing-xs);
         gap: var(--spacing-xs);
@@ -207,7 +207,7 @@
         padding: 0px 6px;
     }
     
-    .faBar-icon, .cart-icon {
+    .cart-icon {
         padding: 2px;
     }
     
@@ -215,4 +215,4 @@
         padding: 2px;
         gap: 2px;
     }
-}
+} */

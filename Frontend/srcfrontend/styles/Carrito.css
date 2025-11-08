@@ -1,7 +1,7 @@
 .main-carrito {
     /* border: 1px solid red; */
     margin: auto;
-    max-width: 1200px;
+    max-width: 1270px;
     display: flex;
     justify-content: center;
     align-content: center;
@@ -33,11 +33,12 @@
 }
 
 .cart-confirm {
+    /* border: 1px solid red; */
     background-color: rgb(255, 255, 255);
     border: 1px solid rgb(196, 196, 196);
     border-radius: var(--border-radius);
     box-shadow: 1px 1px 1px rgba(165, 165, 165, 0.474);
     justify-items: center;
     flex-grow: 1;
-    height: 50%;
+    height: 200px;
 }

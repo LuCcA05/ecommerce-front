@@ -2,12 +2,12 @@ import { useState } from "react";
 import { getUsuarioByDni } from "../services/usuarios";
 
 /**
- * Componente BuscarUsuario
- * 
- * Permite buscar un usuario por su DNI.
- * Muestra un campo de entrada para el DNI y un botón de búsqueda.
- * Cuando se encuentra un usuario, muestra su información (apellido, nombre y email).
- */
+* Componente BuscarUsuario
+* 
+* Permite buscar un usuario por su DNI.
+* Muestra un campo de entrada para el DNI y un botón de búsqueda.
+* Cuando se encuentra un usuario, muestra su información (apellido, nombre y email).
+*/
 
 function BuscarUsuario() {
     // Estado para almacenar el DNI ingresado
@@ -16,9 +16,9 @@ function BuscarUsuario() {
     const [usuario, setUsuario] = useState(null);
 
     /**
-     * Función que busca un usuario por DNI en la API
-     * y actualiza el estado con los datos del usuario encontrado
-     */
+    * Función que busca un usuario por DNI en la API
+    * y actualiza el estado con los datos del usuario encontrado
+    */
     const buscar = () => {
         getUsuarioByDni(dni)
         .then(setUsuario)
