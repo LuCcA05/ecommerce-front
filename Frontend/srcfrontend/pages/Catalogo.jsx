@@ -33,7 +33,7 @@ function Catalogo() {
             })
             .catch((err) => {
                 console.error(err);
-                setError("Error cargando productos");
+                setError(`Error cargando productos: ${err.response?.status} ${err.response?.statusText || err.message}`);
             })
             .finally(() => setLoading(false));
     }, []);
